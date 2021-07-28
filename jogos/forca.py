@@ -57,7 +57,54 @@ def jogar():
 
         else:
             tentivas += 1
-            desenha_forca(tentivas)
+            print("  _______     ")
+            print(" |/      |    ")
+
+            if (tentivas == 1):
+                print(" |      (_)   ")
+                print(" |            ")
+                print(" |            ")
+                print(" |            ")
+
+            if (tentivas == 2):
+                print(" |      (_)   ")
+                print(" |      \     ")
+                print(" |            ")
+                print(" |            ")
+
+            if (tentivas == 3):
+                print(" |      (_)   ")
+                print(" |      \|    ")
+                print(" |            ")
+                print(" |            ")
+
+            if (tentivas == 4):
+                print(" |      (_)   ")
+                print(" |      \|/   ")
+                print(" |            ")
+                print(" |            ")
+
+            if (tentivas == 5):
+                print(" |      (_)   ")
+                print(" |      \|/   ")
+                print(" |       |    ")
+                print(" |            ")
+
+            if (tentivas == 6):
+                print(" |      (_)   ")
+                print(" |      \|/   ")
+                print(" |       |    ")
+                print(" |      /     ")
+
+            if (tentivas == 7):
+                print(" |      (_)   ")
+                print(" |      \|/   ")
+                print(" |       |    ")
+                print(" |      / \   ")
+
+            print(" |            ")
+            print("_|___         ")
+            print()
 
 
         print(letras_acertadas)
@@ -65,17 +112,20 @@ def jogar():
         se_enforcou = tentivas == 7
 
     if (acertou):
-        imprime_mensagem_vencedor()
+        print("Parabéns, você ganhou!")
+        print("       ___________      ")
+        print("      '._==_==_=_.'     ")
+        print("      .-\\:      /-.    ")
+        print("     | (|:.     |) |    ")
+        print("      '-|:.     |-'     ")
+        print("        \\::.    /      ")
+        print("         '::. .'        ")
+        print("           ) (          ")
+        print("         _.' '._        ")
+        print("        '-------'       ")
     else:
-        imprime_mensagem_perdedor(palavra_chave)
-
-
-#Analisando se o jogo for executado direto sem utilizar o arquivo jogos, ele vai conseguir rodar.
-if(__name__ == "__main__"):
-
-    def imprime_mensagem_perdedor(palavra_secreta):
         print("Puxa, você foi enforcado!")
-        print("A palavra era {}".format(palavra_secreta))
+        print("A palavra era {}".format(palavra_chave))
         print("    _______________         ")
         print("   /               \       ")
         print("  /                 \      ")
@@ -93,68 +143,8 @@ if(__name__ == "__main__"):
         print("     \_         _/         ")
         print("       \_______/           ")
 
-    def imprime_mensagem_vencedor():
-        print("Parabéns, você ganhou!")
-        print("       ___________      ")
-        print("      '._==_==_=_.'     ")
-        print("      .-\\:      /-.    ")
-        print("     | (|:.     |) |    ")
-        print("      '-|:.     |-'     ")
-        print("        \\::.    /      ")
-        print("         '::. .'        ")
-        print("           ) (          ")
-        print("         _.' '._        ")
-        print("        '-------'       ")
 
-
-    def desenha_forca(erros):
-        print("  _______     ")
-        print(" |/      |    ")
-
-        if(erros == 1):
-            print(" |      (_)   ")
-            print(" |            ")
-            print(" |            ")
-            print(" |            ")
-
-        if(erros == 2):
-            print(" |      (_)   ")
-            print(" |      \     ")
-            print(" |            ")
-            print(" |            ")
-
-        if(erros == 3):
-            print(" |      (_)   ")
-            print(" |      \|    ")
-            print(" |            ")
-            print(" |            ")
-
-        if(erros == 4):
-            print(" |      (_)   ")
-            print(" |      \|/   ")
-            print(" |            ")
-            print(" |            ")
-
-        if(erros == 5):
-            print(" |      (_)   ")
-            print(" |      \|/   ")
-            print(" |       |    ")
-            print(" |            ")
-
-        if(erros == 6):
-            print(" |      (_)   ")
-            print(" |      \|/   ")
-            print(" |       |    ")
-            print(" |      /     ")
-
-        if (erros == 7):
-            print(" |      (_)   ")
-            print(" |      \|/   ")
-            print(" |       |    ")
-            print(" |      / \   ")
-
-        print(" |            ")
-        print("_|___         ")
-        print()
+#Analisando se o jogo for executado direto sem utilizar o arquivo jogos, ele vai conseguir rodar.
+if(__name__ == "__main__"):
 
     jogar()
